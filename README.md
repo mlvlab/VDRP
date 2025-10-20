@@ -108,13 +108,6 @@ Please follow the commands in ```./scripts```.
 
 
 ### Model Zoo
-| Zero-shot setting |     Backbone      | Unseen | Seen  |  mAP  |
-|:-----------------:|:-----------------:|:------:|:-----:|:-----:|
-|       RF_UC       | ResNet50+ViT-B/16 | 32.34  | 35.17 | 34.60 | 
-|       NF_UC       | ResNet50+ViT-B/16 | 36.67  | 32.63 | 33.44 |
-|        UO         | ResNet50+ViT-B/16 | 37.65  | 33.61 | 34.28 |
-|        UV         | ResNet50+ViT-B/16 | 29.23  | 33.95 | 33.29 |
-
 
 | Method          |     Backbone      | Type  | Unseen↑ | Seen↑ | Full↑ | HM↑   |
 |-----------------|-------------------|-------|---------|-------|-------|-------|
