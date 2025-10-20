@@ -54,16 +54,35 @@ cd CLIP && python setup.py develop && cd ..
 ```
 
 ### Pre-extracted Features
-Download the pre-extracted features from [HERE](https://drive.google.com/file/d/1lUnUQD3XcWyQdwDHMi74oXBcivibGIWN/view?usp=sharing) and the pre-extracted bboxes from [HERE](https://drive.google.com/file/d/19Mo1d4J6xX9jDNvDJHEWDpaiPKxQHQsT/view?usp=sharing). The downloaded files have to be placed as follows.
 
 ```
 |- VDRP
-|   |- hicodet_pkl_files
-|   |   |- union_embeddings_cachemodel_crop_padding_zeros_vitb16.p
-|   |   |- hicodet_union_embeddings_cachemodel_crop_padding_zeros_vit336.p
-|   |- vcoco_pkl_files
-|   |   |- vcoco_union_embeddings_cachemodel_crop_padding_zeros_vit16.p
-|   |   |- vcoco_union_embeddings_cachemodel_crop_padding_zeros_vit336.p
+|   |- data
+|   |   |- distribution
+|   |   |   |- non_rare_first
+|   |   |   |   |-vdrp_group_cov.pt
+|   |   |   |- rare_first
+|   |   |   |   |-vdrp_group_cov.pt
+|   |   |   |- unseen_object
+|   |   |   |   |-vdrp_group_cov.pt
+|   |   |   |- unseen_verb
+|   |   |   |   |-vdrp_group_cov.pt
+|   |   |- distribution_L
+|   |   |   |- non_rare_first
+|   |   |   |   |-vdrp_group_cov.pt
+|   |   |   |- rare_first
+|   |   |   |   |-vdrp_group_cov.pt
+|   |   |   |- unseen_object
+|   |   |   |   |-vdrp_group_cov.pt
+|   |   |   |- unseen_verb
+|   |   |   |   |-vdrp_group_cov.pt
+|   |   |- verb_concepts
+|   |   |   |- human_cues.pt
+|   |   |   |- object_cues.pt
+|   |   |   |- verb_cues.pt
+|   |   |   |- human_cues_L.pt
+|   |   |   |- object_cues_L.pt
+|   |   |   |- verb_cues_L.pt
 :   :      
 ```
 
@@ -92,7 +111,7 @@ You can download the VDRP weights from huggingface:
 ## Citation
 If you find our paper and/or code helpful, please consider citing:
 ```
-}
+
 ```
 
 ## Acknowledgement
