@@ -108,13 +108,20 @@ Please follow the commands in ```./scripts```.
 
 
 ### Model Zoo
+| Zero-shot setting |     Backbone      | Unseen | Seen  |  mAP  |
+|:-----------------:|:-----------------:|:------:|:-----:|:-----:|
+|       RF_UC       | ResNet50+ViT-B/16 | 32.34  | 35.17 | 34.60 | 
+|       NF_UC       | ResNet50+ViT-B/16 | 36.67  | 32.63 | 33.44 |
+|        UO         | ResNet50+ViT-B/16 | 37.65  | 33.61 | 34.28 |
+|        UV         | ResNet50+ViT-B/16 | 29.23  | 33.95 | 33.29 |
 
-| Method          | Type  | Unseen↑ | Seen↑ | Full↑ | HM↑   |
-|-----------------|-------|---------|-------|-------|-------|
-| VDRP (Ours)     | NF-UC | 36.45   | 31.60 | 32.57 | 33.85 |
-| VDRP (Ours)     | RF-UC | 31.29   | 34.41 | 33.78 | 32.77 |
-| VDRP (Ours)     | UO    | 36.13   | 32.84 | 33.39 | 34.41 |
-| VDRP (Ours)     | UV    | 26.69   | 33.72 | 32.73 | 29.80 |
+
+| Method          |     Backbone      | Type  | Unseen↑ | Seen↑ | Full↑ | HM↑   |
+|-----------------|-------------------|-------|---------|-------|-------|-------|
+| VDRP (Ours)     | ResNet50+ViT-B/16 | NF-UC | 36.45   | 31.60 | 32.57 | 33.85 |
+| VDRP (Ours)     | ResNet50+ViT-B/16 | RF-UC | 31.29   | 34.41 | 33.78 | 32.77 |
+| VDRP (Ours)     | ResNet50+ViT-B/16 | UO    | 36.13   | 32.84 | 33.39 | 34.41 |
+| VDRP (Ours)     | ResNet50+ViT-B/16 | UV    | 26.69   | 33.72 | 32.73 | 29.80 |
 
 ### Model Weights
 
