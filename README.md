@@ -109,12 +109,12 @@ Please follow the commands in ```./scripts```.
 
 ### Model Zoo
 
-| Method          |     Backbone      | Type  | Unseen↑ | Seen↑ | Full↑ | HM↑   |
-|-----------------|-------------------|-------|---------|-------|-------|-------|
-| VDRP            | ResNet50+ViT-B/16 | NF-UC | 36.45   | 31.60 | 32.57 | 33.85 |
-| VDRP            | ResNet50+ViT-B/16 | RF-UC | 31.29   | 34.41 | 33.78 | 32.77 |
-| VDRP            | ResNet50+ViT-B/16 | UO    | 36.13   | 32.84 | 33.39 | 34.41 |
-| VDRP            | ResNet50+ViT-B/16 | UV    | 26.69   | 33.72 | 32.73 | 29.80 |
+| Method         |     Backbone      | Type  | Unseen↑ | Seen↑ | Full↑ | HM↑   |
+|----------------|-------------------|-------|---------|-------|-------|-------|
+|      VDRP      | ResNet50+ViT-B/16 | NF-UC | 36.45   | 31.60 | 32.57 | 33.85 |
+|      VDRP      | ResNet50+ViT-B/16 | RF-UC | 31.29   | 34.41 | 33.78 | 32.77 |
+|      VDRP      | ResNet50+ViT-B/16 | UO    | 36.13   | 32.84 | 33.39 | 34.41 |
+|      VDRP      | ResNet50+ViT-B/16 | UV    | 26.69   | 33.72 | 32.73 | 29.80 |
 
 ### Model Weights
 
