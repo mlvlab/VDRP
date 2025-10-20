@@ -7,6 +7,7 @@ Official PyTorch implementation of NeurIPS 2025 paper: **"Visual Diversity and R
 
 
 ### Dataset 
+
 Follow the process of [UPT](https://github.com/fredzzhang/upt).
 
 The downloaded files should be placed as follows. Otherwise, please replace the default path to your custom locations.
@@ -24,6 +25,7 @@ The downloaded files should be placed as follows. Otherwise, please replace the 
 ```
 
 ### Dependencies
+
 1. Follow the instructions to install dependencies.
 
 ```
@@ -35,7 +37,7 @@ conda activate vdrp
 pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
 pip install matplotlib==3.6.3 scipy==1.10.0 tqdm==4.64.1
 pip install numpy==1.24.1 timm==0.6.12
-pip install jupyter
+pip install fvcore
 ```
 
 2. Our code is built upon [CLIP](https://github.com/openai/CLIP). Install the local package of CLIP:
@@ -71,9 +73,11 @@ cd CLIP && python setup.py develop && cd ..
 ```
 
 ### Pre-extracted Features
+
 This repository provides pre-computed visual statistics and concept embeddings used for our VDRP experiments.
 
 #### Group Covariance Statistics
+
 ```
 data/
 ├── distribution/ # CLIP ViT-B/16
@@ -91,6 +95,7 @@ data/
 ```
 
 #### LLM-derived Concept Embeddings
+
 ```
 data/verb_concepts/
 ├── human_cues.pt
@@ -124,10 +129,12 @@ You can download the VDRP weights from huggingface:
 ```
 
 ## Citation
+
 If you find our paper and/or code helpful, please consider citing:
 ```
 
 ```
 
 ## Acknowledgement
+
 We gratefully thank the authors from [UPT](https://github.com/fredzzhang/upt), [ADA-CM](https://github.com/ltttpku/ADA-CM/tree/main) and [CMMP](https://github.com/ltttpku/CMMP) for open-sourcing their code.

@@ -30,6 +30,7 @@ import vcoco_text_label, hico_text_label
 
 warnings.filterwarnings("ignore")
 
+
 def tranverse_and_get_hoi_cooccurence(dataset):
     # Get the number of interaction classes
     category = dataset.num_interation_cls
@@ -476,7 +477,7 @@ if __name__ == '__main__':
     parser.add_argument('--training_set_ratio', type=float, default=1.0)
     parser.add_argument('--zs', action='store_true') ## zero-shot
     parser.add_argument('--hyper_lambda', type=float, default=2.8)
-    parser.add_argument('--zs_type', type=str, default='unseen_verb', choices=['rare_first', 'non_rare_first', 'unseen_verb', 'unseen_object', 'uc0', 'uc1', 'uc2', 'uc3', 'uc4', 'default'])
+    parser.add_argument('--zs_type', type=str, default='unseen_verb', choices=['rare_first', 'non_rare_first', 'unseen_verb', 'unseen_object', 'uc0', 'uc1', 'uc2', 'uc3', 'uc4', 'default', 'vcoco'])
     parser.add_argument('--fill_zs_verb_type', type=int, default=0,) # (for init) 0: random; 1: weighted_sum, 
     parser.add_argument('--vis_tor', type=float, default=1.0)
     parser.add_argument('--adapter_num_layers', type=int, default=1)
