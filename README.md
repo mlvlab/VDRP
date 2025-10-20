@@ -1,5 +1,5 @@
 # [NeurIPS 2025] Visual Diversity and Region-aware Prompt Learning for Zero-shot HOI detection
-Official PyTorch implementation of our NeurIPS 2025 paper: **"Visual Diversity and Region-aware Prompt Learning for Zero-shot HOI Detection"**
+Official PyTorch implementation of NeurIPS 2025 paper: **"Visual Diversity and Region-aware Prompt Learning for Zero-shot HOI Detection"**
 
 <p align="center">
   <img src="assets/Overall_figure.png" width="800"/>
