@@ -1,6 +1,15 @@
 # [NeurIPS 2025] Visual Diversity and Region-aware Prompt Learning for Zero-shot HOI detection
 Official PyTorch implementation of our NeurIPS 2025 paper:
+
 **"Visual Diversity and Region-aware Prompt Learning for Zero-shot HOI Detection"**
+
+<p align="center">
+  <img src="assets/Overall_figure.png" width="800"/>
+</p>
+<p align="center">
+  <em> Overview of VDRP framework.</em>
+</p>
+
 
 ### Dataset 
 Follow the process of [UPT](https://github.com/fredzzhang/upt).
@@ -15,7 +24,7 @@ The downloaded files should be placed as follows. Otherwise, please replace the 
 |   |- vcoco
 |   |   |- mscoco2014
 |   |       |- train2014
-|   |       |-val2014
+|   |       |- val2014
 :   :      
 ```
 
