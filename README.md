@@ -1,5 +1,4 @@
-# VDRP
-[NeurIPS 2025] Official code for Visual Diversity and Region-aware Prompt learning for Zero-shot HOI detection
+# [NeurIPS 2025] Official code for Visual Diversity and Region-aware Prompt learning for Zero-shot HOI detection
 
 ### Dataset 
 Follow the process of [UPT](https://github.com/fredzzhang/upt).
