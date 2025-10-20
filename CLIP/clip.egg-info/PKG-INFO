@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: clip
+Version: 1.0
+Author: OpenAI
+License-File: LICENSE
+Requires-Dist: ftfy
+Requires-Dist: regex
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: torchvision
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Dynamic: author
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
