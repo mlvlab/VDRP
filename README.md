@@ -82,11 +82,11 @@ data/
 │ ├── unseen_object/vdrp_group_cov.pt
 │ └── unseen_verb/vdrp_group_cov.pt
 │
-└── distribution_L/ # CLIP ViT-L/14
-├── non_rare_first/vdrp_group_cov.pt
-├── rare_first/vdrp_group_cov.pt
-├── unseen_object/vdrp_group_cov.pt
-└── unseen_verb/vdrp_group_cov.pt
+├── distribution_L/ # CLIP ViT-L/14
+│ ├── non_rare_first/vdrp_group_cov.pt
+│ ├── rare_first/vdrp_group_cov.pt
+│ ├── unseen_object/vdrp_group_cov.pt
+│ └── unseen_verb/vdrp_group_cov.pt
 :
 ```
 
