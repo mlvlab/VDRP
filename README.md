@@ -71,36 +71,34 @@ cd CLIP && python setup.py develop && cd ..
 ```
 
 ### Pre-extracted Features
+This repository provides pre-computed visual statistics and concept embeddings used for our VDRP experiments.
 
+#### Group Covariance Statistics
 ```
-|- VDRP
-|   |- data
-|   |   |- distribution
-|   |   |   |- non_rare_first
-|   |   |   |   |-vdrp_group_cov.pt
-|   |   |   |- rare_first
-|   |   |   |   |-vdrp_group_cov.pt
-|   |   |   |- unseen_object
-|   |   |   |   |-vdrp_group_cov.pt
-|   |   |   |- unseen_verb
-|   |   |   |   |-vdrp_group_cov.pt
-|   |   |- distribution_L
-|   |   |   |- non_rare_first
-|   |   |   |   |-vdrp_group_cov.pt
-|   |   |   |- rare_first
-|   |   |   |   |-vdrp_group_cov.pt
-|   |   |   |- unseen_object
-|   |   |   |   |-vdrp_group_cov.pt
-|   |   |   |- unseen_verb
-|   |   |   |   |-vdrp_group_cov.pt
-|   |   |- verb_concepts
-|   |   |   |- human_cues.pt
-|   |   |   |- object_cues.pt
-|   |   |   |- verb_cues.pt
-|   |   |   |- human_cues_L.pt
-|   |   |   |- object_cues_L.pt
-|   |   |   |- verb_cues_L.pt
-:   :      
+data/
+├── distribution/ # CLIP ViT-B/16
+│ ├── non_rare_first/vdrp_group_cov.pt
+│ ├── rare_first/vdrp_group_cov.pt
+│ ├── unseen_object/vdrp_group_cov.pt
+│ └── unseen_verb/vdrp_group_cov.pt
+│
+└── distribution_L/ # CLIP ViT-L/14
+├── non_rare_first/vdrp_group_cov.pt
+├── rare_first/vdrp_group_cov.pt
+├── unseen_object/vdrp_group_cov.pt
+└── unseen_verb/vdrp_group_cov.pt
+:
+```
+
+#### LLM-derived Concept Embeddings
+```
+data/verb_concepts/
+├── human_cues.pt
+├── object_cues.pt
+├── verb_cues.pt
+├── human_cues_L.pt
+├── object_cues_L.pt
+└── verb_cues_L.pt
 ```
 
 ### Train/Test
