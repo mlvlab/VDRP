@@ -77,9 +77,9 @@ cd CLIP && python setup.py develop && cd ..
 
 ### Pre-extracted Features
 
-This repository provides pre-computed visual statistics and concept embeddings used for our VDRP experiments.
+This repository provides pre-computed visual diversity statistics and concept embeddings used for our VDRP experiments.
 
-#### Group Covariance Statistics
+#### Group covariance statistics for visual diversity-aware prompt learning: [Link](https://drive.google.com/drive/folders/1eyblEG7I82MyE4d69cTWhKft2LP-h67W?usp=drive_link)
 
 ```
 data/
@@ -93,20 +93,25 @@ data/
 │ ├── non_rare_first/vdrp_group_cov.pt
 │ ├── rare_first/vdrp_group_cov.pt
 │ ├── unseen_object/vdrp_group_cov.pt
-│ └── unseen_verb/vdrp_group_cov.pt
+│ ├── unseen_verb/vdrp_group_cov.pt
+│ ├── default/vdrp_group_cov.pt
+│ └── vcoco/vdrp_group_cov.pt
 :
 ```
 
-#### LLM-derived Concept Embeddings
+#### Concept embeddings for region-aware prompt augmentation: [Link](https://drive.google.com/drive/folders/1pUrvzidAKofWeQD9yl53MCr_c2rRfMan?usp=drive_link)
 
 ```
 data/verb_concepts/
-├── human_cues.pt
-├── object_cues.pt
-├── verb_cues.pt
-├── human_cues_L.pt
-├── object_cues_L.pt
-└── verb_cues_L.pt
+├── human_concepts.pt
+├── object_concepts.pt
+├── context_concepts.pt
+├── human_concepts_L.pt
+├── object_concepts_L.pt
+├── context_concepts_L.pt
+├── human_concepts_vcoco.pt
+├── object_concepts_vcoco.pt
+└── context_concepts_vcoco.pt
 ```
 
 ### Train/Test
@@ -126,9 +131,9 @@ Please follow the commands in ```./scripts```.
 
 ### Model Weights
 
-You can download the VDRP weights from huggingface:
+You can download the VDRP weights this link:
 ```
-
+https://drive.google.com/drive/folders/1c0buK5W9fnF869C_zdtrEcyxsedSNoTv?usp=sharing
 ```
 
 ## Citation
@@ -140,4 +145,4 @@ If you find our paper and/or code helpful, please consider citing:
 
 ## Acknowledgement
 
-We gratefully thank the authors from [UPT](https://github.com/fredzzhang/upt), [ADA-CM](https://github.com/ltttpku/ADA-CM/tree/main) and [CMMP](https://github.com/ltttpku/CMMP) for open-sourcing their code.
+We gratefully thank the authors from [UPT](https://github.com/fredzzhang/upt), [PViC](https://github.com/fredzzhang/pvic), [ADA-CM](https://github.com/ltttpku/ADA-CM/tree/main) and [CMMP](https://github.com/ltttpku/CMMP) for open-sourcing their code.

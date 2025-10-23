@@ -570,13 +570,18 @@ class UPT(nn.Module):
             load_path = './data/verb_concepts/'
             
             if self.visual_output_dim == 512: 
-                human_cue_file = 'human_cues.pt'
-                object_cue_file = 'object_cues.pt'
-                context_cue_file = 'context_cues.pt'
+                human_cue_file = 'human_concepts.pt'
+                object_cue_file = 'object_concepts.pt'
+                context_cue_file = 'context_concepts.pt'
             elif self.visual_output_dim == 768: 
-                human_cue_file = 'human_cues_L.pt'
-                object_cue_file = 'object_cues_L.pt'
-                context_cue_file = 'context_cues_L.pt'
+                if self.zs_type == 'vcoco':
+                    human_cue_file = 'human_concepts_vcoco.pt'
+                    object_cue_file = 'object_concepts_vcoco.pt'
+                    context_cue_file = 'context_concepts_vcoco.pt'                
+                else: 
+                    human_cue_file = 'human_concepts_L.pt'
+                    object_cue_file = 'object_concepts_L.pt'
+                    context_cue_file = 'context_concepts_L.pt'
 
             self.branch = args.branch
             self.temperature = args.temperature
