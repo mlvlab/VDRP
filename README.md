@@ -1,4 +1,4 @@
-# [NeurIPS 2025] Visual Diversity and Region-aware Prompt Learning for Zero-shot HOI detection
+# [NeurIPS 25] Visual Diversity and Region-aware Prompt Learning for Zero-shot HOI detection
 Official PyTorch implementation of NeurIPS 2025 paper: **"Visual Diversity and Region-aware Prompt Learning for Zero-shot HOI Detection"**
 
 <p align="center">
@@ -29,7 +29,7 @@ The downloaded files should be placed as follows. Otherwise, please replace the 
 1. Follow the instructions to install dependencies.
 
 ```
-git clone git@github.com:https://github.com/YangChanhyeong/VDRP.git
+git clone github.com:https://github.com/YangChanhyeong/VDRP.git
 
 conda create --name vdrp python=3.9 # CLIP dependency
 conda activate vdrp
